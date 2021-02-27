@@ -45,4 +45,6 @@ fastify.get('/:ean', schema, function (req, reply) {
   });
 })
 
-fastify.listen(3000)
+fastify.listen(3000);
+
+console.log('Listening on 3000');
