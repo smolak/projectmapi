@@ -1,4 +1,4 @@
-const drugsData = require('./drugs-data-apteka-gold.json.json');
+const drugsData = require('./drugs-data-apteka-gold.json');
 
 module.exports = (req, res) => {
   const { ean } = req.query;
