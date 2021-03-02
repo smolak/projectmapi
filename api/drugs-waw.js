@@ -9,11 +9,13 @@ module.exports = (req, res) => {
   }
 
   const data = {
-    baseUrl: 'https://aptekawaw.pl',
     name: drugData.name,
     'package': drugData.package,
     ean: drugData.ean,
-    imagePaths: drugData.imagePaths
+    imagePaths: {
+      big: 'https://aptekawaw.pl/' + drugData.imagePaths.big,
+      small: 'https://aptekawaw.pl/' + drugData.imagePaths.small,
+    }
   };
 
   res.status(200).send(data);
