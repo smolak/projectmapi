@@ -9,7 +9,7 @@ module.exports = (req, res) => {
   }
 
   const data = {
-    baseUrl: 'https://',
+    baseUrl: 'https://aptekawaw.pl',
     name: drugData.name,
     'package': drugData.package,
     ean: drugData.ean,
