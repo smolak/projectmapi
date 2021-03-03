@@ -12,7 +12,7 @@ module.exports = (req, res) => {
     name: drugData.name,
     'package': drugData.package,
     ean: drugData.ean,
-    imagePaths: {
+    imageUrls: {
       big: 'https://aptekawaw.pl/' + drugData.imagePaths.big,
       small: 'https://aptekawaw.pl/' + drugData.imagePaths.small,
     }
